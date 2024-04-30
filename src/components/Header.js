@@ -23,7 +23,7 @@ const Header = () => {
       position="sticky"
       sx={{
         background:
-          "radial-gradient(circle, rgba(29,21,167,1) 0%, rgba(64,64,164,1) 35%, rgba(7,167,199,1) 100%);",
+          "radial-gradient(circle, rgba(131,44,44,1) 0%, rgba(144,0,255,1) 100%);",
       }}
     >
       <Toolbar>

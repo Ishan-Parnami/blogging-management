@@ -62,6 +62,7 @@ const BlogDetail = () => {
       {inputs && (
         <form onSubmit={handleSubmit}>
           <Box
+            bgcolor={"#fff"}
             border={3}
             borderColor="linear-gradient(90deg, rgba(58,75,180,1) 2%, rgba(116,49,110,1) 36%, rgba(2,0,161,1) 73%, rgba(69,92,252,1) 100%)"
             borderRadius={10}
