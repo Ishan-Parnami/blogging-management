@@ -25,11 +25,11 @@ const Blogs = () => {
             id={blog._id}
             isUser={
               localStorage.getItem("userId") === (blog.user && blog.user._id)
-            } // Added null check for blog.user
+            }
             title={blog.title}
             description={blog.description}
             imageURL={blog.image}
-            userName={blog.user ? blog.user.name : ""} // Added null check for blog.user
+            userName={blog.user ? blog.user.name : ""} 
           />
         ))}
     </div>
