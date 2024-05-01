@@ -28,12 +28,12 @@ const Auth = () => {
         password: inputs.password,
       });
       
-      const data = res.data; // Access data without 'await', as it's not a promise
+      const data = res.data;
       console.log(data);
       return data;
     } catch (err) {
       console.error(err);
-      return null; // Return null or handle error appropriately
+      return null; 
     }
   };
   
@@ -41,6 +41,10 @@ const Auth = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs);
+    if (inputs.name === "" || inputs.email === "" || inputs.password === "") {
+      alert("Please mention the correct details");
+      return; 
+    }
     if (isSignup) {
       sendRequest("signup")
         .then((data) => localStorage.setItem("userId", data.user._id))
