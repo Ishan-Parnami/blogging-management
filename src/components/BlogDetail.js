@@ -52,6 +52,10 @@ const BlogDetail = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!inputs.title || !inputs.description) {
+      alert("Please enter the values");
+      return;
+    }
     sendRequest()
       .then((data) => console.log(data))
       .then(() => navigate("/myBlogs/"));

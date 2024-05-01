@@ -41,7 +41,7 @@ const Auth = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs);
-    if (inputs.name === "" || inputs.email === "" || inputs.password === "") {
+    if (inputs.email === "" || inputs.password === "") {
       alert("Please mention the correct details");
       return; 
     }

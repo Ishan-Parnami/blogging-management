@@ -33,6 +33,10 @@ const AddBlog = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!inputs.title || !inputs.description || !inputs.imageURL) {
+      alert("Please enter the values");
+      return;
+    }
     console.log(inputs);
     sendRequest()
       .then((data) => console.log(data))
